@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Description de la balise vidéo</title>
+		<meta charset="utf-8" />
+		<meta name="author" content="Samuel Nicolas" />
+		<meta name="description" content="Présentation de la balise Video, la balise video  permet de lire des fichiers ou des flux vidéo directement dans la page" />
+		<meta name="keywords" content="balise, video" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+		<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+
+		<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+
+	</head>
+
+	<body>
+		<header>
+			<div class="header-flex"><div class="image-titre"><img src="newimg/logopage.png" alt="logo" /></div>
+				<p class="titre-page">Description des balises HTML</p>
+			</div>
+			<nav>
+				<ul id="menu">
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="html.html">Html</a></li>
+					<li><a href="head.html">Head</a></li>
+					<li><a href="title.html">Title</a></li>
+					<li><a href="meta.html">Meta</a></li>
+					<li><a href="body.html">Body</a></li>
+					<li><a href="section.html">Section</a></li>
+					<li><a href="header.html">Header</a></li>
+					<li><a href="aside.html">Aside</a></li>
+					<li><a href="footer.html">Footer</a></li>
+					<li><a href="nav.html">Nav</a></li>
+					<li><a href="p.html">Paragraph</a></li>
+					<li><a href="h.html">H1 à H6</a></li>
+					<li><a href="a.html">A</a></li>
+					<li><a href="img.html">Img</a></li>
+					<li><a href="ul.html">Ul</a></li>
+					<li><a href="ol.html">Ol</a></li>
+					<li><a href="div.html">Div</a></li>
+					<li><a href="video.html">Video</a></li>
+					<li><a href="strong.html">Strong</a></li>
+					<li><a href="em.html">Em</a></li>
+					<li><a href="span.html">Span</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section>
+				<article>
+					<header class="header-article">
+						<h2>La balise Video</h2>
+						<p class="p-header-article"/> Elle permet d'insérer du contenu multimédia sur votre page. C'est une alternative aux plugin comme Flash, QuickTime, Silverlight, Java...etc. C'est l'une des grandes avancées de html5. La balise < video > permet de lire des fichiers ou des flux vidéo directement dans la page en proposant un lecteur intégré avec des contrôles génériques tels que lecture, pause, positionnement dans la vidéo et contrôle du volume. Lorsque le fichier vidéo n'est pas trouvé ou que son format n'est pas supporté, le lecteur n'est pour certains navigateurs pas visible.<br/>
+						La balise < source > permet de définir au sein de l'élément < video > plusieurs ressources alternatives au cas où le navigateur ne supporterai pas le format initialement spécifié dans l'attribut "src" (il faut alors supprimer l'attribut "src" et spécifier les différents fichiers par ordre de priorité dans les balises < source >). </p>
+						<p>< video controls src="video.ogv">Ici la description alternative < / video></p>
+					</header>
+
+					<div class="conteneur">
+
+					<p>Avec la balise video, une API est également disponible et permet de gérer en javascript beaucoup de paramètres pour gérer le flux. Voici une introduction à quelques fonctions de l'API vidéo : </p>
+					<table>
+					<tr>
+						<th>Propriétés Javascript</th>
+						<th>Désignation</th>
+					</tr>
+
+					<tr>
+					    <td>load</td>
+						<td>Permet de charger dynamiquement le fichier source de la vidéo</td>
+					</tr>
+
+					<tr>
+					    <td>play</td>
+						<td>Lance la lecture de la vidéo</td>
+					</tr>
+
+					<tr>
+					    <td>pause</td>
+						<td>Pause la lecture de la vidéo</td>
+					</tr>
+
+					<tr>
+					    <td>currentime</td>
+						<td>Retourne ou modifie l'avancement actuel de la lecture de la vidéo en secondes</td>
+					</tr>
+
+					<tr>
+					    <td>playbackRate</td>
+						<td>Permet de modifier la vitesse de lecture de la vidéo</td>
+					</tr>
+
+					<tr>
+					    <td>volume</td>
+						<td>Permet de modifier dynamiquement le contrôle du volume</td>
+					</tr>
+
+					<tr>
+					    <td>muted</td>
+						<td>Permet de désactiver ou réactiver le son de la vidéo</td>
+					</tr>
+					</table>
+
+					<table>
+					<tr>
+						<th>Attributs</th>
+						<th>Désignation</th>
+						<th>Unités acceptées</th>
+					</tr>
+
+					<tr>
+					    <td>autoplay</td>
+						<td>Indique que le fichier vidéo doit être lu automatiquement lorsqu'il est chargé</td>
+						<td>autoplay</td>
+					</tr>
+
+					<tr>
+					    <td>control</td>
+						<td>Affiche les différentes fonctionnalités du lecteur (lecture, pause, volume ...)</td>
+						<td>controls</td>
+					</tr>
+
+					<tr>
+					    <td>loop</td>
+						<td>Indique au lecteur de lire la vidéo en boucle</td>
+						<td>loop</td>
+					</tr>
+
+					<tr>
+					    <td>muted</td>
+						<td>Indique au lecteur de désactiver le son de la vidéo</td>
+						<td>muted</td>
+					</tr>
+
+					</tr>
+					</table>
+					
+					<div class="exemples-colonne">
+						<h3>Exemple</h3>
+
+						<p class="exemple-text">la syntaxe de base de la balise video est extrêmement simple:</p>
+						<div class="images-exemples"><img src="images-exemples/image-liee-video.jpg" alt="la syntaxe de base de la balise video est extrêmement simple" width="900" height="70" /></div>
+
+						<p class="exemple-text">Une fenêtre video classique:</p>
+						<img src="images-exemples/image-liee-video2.jpg" alt="présentation de la fenêtre video" width="662" height="382"/></div>
+					</div>
+				</div>
+			</article>
+
+		</section>
+		<footer>
+				<p>OnlineFormapro - Mars 2017</p><div class="lien-bouton"><a href="#" class="bouton">^</a></div>
+		</footer>
+
+	</body>
+</html>
